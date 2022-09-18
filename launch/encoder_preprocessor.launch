@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="kaist_tools" type="encoder_preprocessor.py" name="encoder_preprocessor" output="screen">
+        <param name="encoder_data_topic" value="/encoder_ticks"/>
+        <param name="wheel_odometry_topic" value="/odom"/>
+    </node>
+
+</launch>
